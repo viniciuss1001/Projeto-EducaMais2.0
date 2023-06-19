@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Estuda Certo</title>
+    <!--Estuda Certo: Desperte seu potencial, conquiste o mundo!-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Assets/owl.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    <!--fim das fontes-->
+
+    <!--metas de descrição -->
+    <meta name="description" content="Estudo Certo">
+    <meta name="keywords" content="Estudos,Vestibular,Enem,Aprendizado,Educação,Brasil,Aprovação">
+    <meta name="author" content="Vinícius Frota">
+    <!--<meta http-equiv="refresh" content="60">-->
+</head>
+<body id="'top">
+    <!--Header do site-->
+    <header class="header">
+        <a href="#top" class="logo" title="Estudo Certo">
+            <img src="Assets/owl.png" alt="Estudo Certo">
+        </a>
+        <nav class="navbar" id="navbar">
+            <a href="#inicio" class="active" data-scroll="inicio" title="Página Inicial">Inicio</a>
+            <a href="#habilidades" data-scroll="habilidades" title="habilidades">Habilidades</a>
+            <a href="#vestibular" data-scroll="vestibular" title="Vestibulares">Vestibulares</a>
+            <a href="#praticas" data-scroll="praticas" title="Práticas">Práticas</a>
+            <a href="#assuntos" data-scroll="assuntos" title="Assuntos">Assuntos</a>
+            <a href="#duvidas" data-scroll="duvidas" title="Dúvidas">Dúvidas</a>
+            <!--<a href="#sobre" data-scroll="sobre" title="Sobre">Sobre</a>-->
+        </nav>
+        <span id="bar" onclick="openNav()">&#9776</span>
+        <span id="bar2">
+            <i class="fa-sharp fa-solid fa-bars-staggered" onclick="openSide2()"></i>
+        </span>
+    </header>
+    <!--fim header-->
+    <!--Barra lateral direita de informações-->
+    <div class="Side2" id="Side2">
+        <a href="javascript:void(0)" class="closebtn2" onclick="closeSide2()">
+            <i class="fa-solid fa-x"></i>
+        </a>
+        <img src="Assets/owl.png" alt="">
+        <h3>Estuda Certo</h3>
+        <p>
+            Desperte seu potencial, conquiste o mundo!
+        </p>
+        <h5>Links Úteis</h5>
+        <div class="links-u">
+            <a href="">Empresa</a>
+            <a href="">Serviços</a>
+            <a href="">Afiliações</a>
+            <a href="">CEO</a>
+            <a href="">Sobre Nós</a>
+        </div>
+        <h5>Siga-nos em</h5>
+        <div class="Side2-redes">
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    <!--barra de opções mobile-->
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!--Botões de registro e entrar na conta-->
+        <a href="pages/entrar.html" class="entrar" >Entrar</a>
+        <a href="pages/criar.html" class="registrar">Criar Conta</a>
+
+        <!--borões de navegação lateral-->
+        <a href="#inicio" class="active" data-scroll="Inicio" title="Página Inicial">Inicio</a>
+        <a href="#habilidades" data-scroll="habilidades" title="Habilidades">Habilidades</a>
+        <a href="#vestibular" data-scroll="vestibular" title="Vestibulares">Vestibulares</a>
+        <a href="#praticas" data-scroll="praticas" title="Práticas">Práticas</a>
+        <a href="#assuntos" data-scroll="assuntos" title="Assuntos">Assuntos</a>
+        <a href="#duvidas" data-scroll="duvidas" title="Dúvidas">Dùvidas</a>
+        <!--<a href="#sobre" data-scroll="sobre" title="Sobre">Sobre</a>-->
+    </div>
+    <section class="inicio" id="inicio">
+        <div class="content">
+            <div class="home">
+                <h1>Estuda Certo</h1>
+                <h4>Estuda Certo: Desperte seu potencial, conquiste o mundo!</h4>
+                <div class="home-buttons">
+                    <a href="pages/entrar.html" class="entrar" id="entrar">Entrar</a>
+                    <a href="pages/criar.html" class="registrar" id="registrar">Criar</a> 
+                </div>
+            </div>
+            <div class="home-img" id="home-img">
+            <img src="Assets/homed.jpg" alt=""> 
+            </div>
+            
+        </div>
+    </section>
+     <div class="next">
+            <a href="#geral">
+                <i class="fa-solid fa-chevron-circle-down"></i>
+            </a>
+    </div>
+    <section class="geral" id="geral">
+        <div class="content">
+            <h3>Visão Geral</h3>
+            <h4>Conheça nosso curso</h4>
+            <p>
+                O curso visa preparar estudantes para ingressar na universidade, aprimorando suas habilidades acadêmicas e oferecendo estratégias para gerenciar tempo e estresse durante os exames. Os principais tópicos das disciplinas são abordados, visando garantir que os alunos estejam preparados para o vestibular e tenham confiança na vida universitária.
+            </p>
+        </div>    
+        <div class="geral-img" id="geral-img">
+            <img src="Assets/visão geral.jpg" alt="">
+        </div>
+        
+    </section>
+    <section class="habilidades" id="habilidades">
+        <div class="title">
+                <h2>Diciplinas e Habilidades Acadêmicas</h2>
+        </div>
+        <div class="content">
+                <!--área de designação e resumo do módulo-->
+                <div class="top">1 | Habilidades Acadêmicas</div>
+                <p class="p-topo">
+                    Neste módulo do curso de Aprendizado Pré vestibular, os alunos terão a oportunidade de desenvolver habilidades acadêmicas essenciais para obter sucesso no vestibular e na vida universitária.
+                </p>
+                
+                <!--área dos conteúdos do módulo e resumo de cada módulo -->
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fa-solid fa-check-double"></i>
+                        <h2>Técnicas de Estudos Eficazes</h2>
+                        <ul class="check-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como fazer anotações durante as aulas
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como revisar o material de estudo com eficiência
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como criar um amabiente de estudos produtivo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como lidar com a procrastinação;
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <h2>Definição de Metas</h2>
+                        <ul class="check-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como mensurar objetivos
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como seguir uma trilha gradual de metas
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Aplcação de metas em uma linha do tempo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como descrever objetivos e metas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-clock"></i>
+                        <h2>Gerenciamento de Tempo</h2>
+                        <ul class="check-list">
+                            <li><i class="fa-solid fa-check"></i>
+                                Como dividir o tempo disponível entre as diferentes questões;
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como priorizar as questões mais difíceis;
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como evitar distrações durante a prova;
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-users-gear"></i>
+                        <h2>Autodirecionamento</h2>
+                        <ul class="check-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como direcionar o próprio aprendizado
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como buscar materiais relevantes
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como pesquisar e sempre aprender algo novo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como desenvolver estratégias próprias
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                        <h2>Estratégias de como lidar com o estresse</h2>
+                        <ul class="check-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Exercícios de respiração e meditação para acalmar a mente;
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Técnicas de visualização para reduzir a ansiedade;
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Dicas para uma alimentação equilibrada e sono adequado;
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h2>Desenvolvimento de Habilidades Sociais</h2>
+
+                        <ul class="check-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como fazer apresentações orais de forma clara e eficiente;
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como trabalhar em grupo de forma produtiva;
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Como lidar com conflitos interpessoais.
+                            </li>
+                        </ul>
+                    </div>
+                </div>     
+        </div>
+
+    </section>
+    <section class="vestibular" id="vestibular">
+        <div class="title">
+            <h2>Preparação para o Vestibular</h2>
+        </div>
+        <div class="content">
+            <div class="top">2 | Preparação para o vestibular</div>
+            <p class="p-topo">
+                Neste módulo do curso de Aprendizado Pré vestibular, os alunos terão a oportunidade de se preparar adequadamente para o vestibular. Eles irão adquirir habilidades e estratégias que lhes permitam enfrentar as provas com confiança e segurança.
+            </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <h2>Conhecimento das Provas</h2>
+                    <p>
+                        No módulo de preparação para o vestibular, os alunos serão introduzidos às provas, incluindo sua estrutura, as áreas de conhecimento abordadas e as habilidades fundamentais necessárias para cada área.
+                    </p>
+                    <ul class="check-list">
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Ciências da Natureza
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Ciências Humanas
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Matemática
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Linguagens
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Retenção de conteúdo</h2>
+                    <p>
+                        No módulo de preparação para o vestibular, os alunos serão apresentados aos melhores métodos de absorção e recuperação de conteúdo.
+                    </p>
+                    <ul class="check-list">
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Atenção
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Retenção
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Recuperação
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Armazenamento
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <h2>Estratégias para Resolução de Questões</h2>
+                    <ul class="check-list">
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Como interpretar melhor as perguntas;
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Como utilizar o raciocínio lógico na resolução de problemas;
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square'"></i>
+                            Como evitar armadilhas nas questões;
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Como administrar o tempo disponível.
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-clipboard-question"></i>
+                    <h2>Simulados</h2>
+                    <ul class="check-list">
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Praticar através de simulados
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Familiarizar-se com o formato e conteúdo das provas
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Receber feedback personalizado sobre seu desempenho
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            identificar pontos forte e fracos
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Aperfeiçoar suas habilidades e conhecimentos para o exame
+                        </li>
+                    </ul>
+            
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-people-robbery"></i>
+                    <h2>Estratégias para Lidar com o Estresse durante a Prova</h2>
+                    <ul class="check-list">
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Identificar e reconhecer sinais de estresse
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Utilizar técnicas de respiração e relaxamento para reduzir a ansiedade
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            desenvolver um plano de estudo e preparação para adquirir mais confiança
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Gerenciar o tempo de forma eficaz durante a prova
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Focar na resolução das questões, evitando distrações
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Adotar postura mental positiva e enfrentar desafios com determinação
+                        </li>
+                    </ul>
+                </div>
+                <div class="icons" >
+                    <i class="fa-solid fa-people-carry"></i>
+                    <h2>Planejamento Pós-Vestibular</h2>
+                    <ul class="check-list" id="pos">
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Escolher o curso e a Universidade adequados.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Providenciar a documentação necessária para a matrícula.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Adaptar-se à vida universitária.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-square"></i>
+                            Planejar seus próximos passos acadêmicos após o vestibular.
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="praticas" id="praticas">
+        <div class="title">
+            <h1>Práticas: Aplicando os conhecimentos Aprendidos</h1>
+        </div>
+        <div class="content">
+            <div class="top">3 | Exercícios: Testando na Prática</div>
+            <p class="p-topo">
+                Nesta lição, colocaremos a teoria em prática por meio de atividades práticas. Clique nos itens abaixo para conferir cada exercício e desenvolver habilidades práticas que o ajudarão a ter sucesso na disciplina.
+            </p>
+            <div class="container">
+                <div class="exerc" id="exerc">
+                    <i class="fa-solid fa-pen-clip"></i>
+                    <h2>Exercícios, Fixação e Aprendizado</h2>
+                    <p>
+                        Fixar conteúdos por meio de exercícios de aplicação é uma das melhores formas de aprendizado. A prática ativa e a repetição são estratégias eficazes para consolidar o conhecimento de forma duradoura. Ao colocar em prática o que foi estudado, ocorre a ativação das áreas cerebrais relacionadas ao aprendizado, o que facilita a retenção e a compreensão dos conteúdos.
+                    </p>
+                </div>
+            </div>
+            <div class="detalhes">
+                <details>
+                    <summary>Enfrentando Desafios</summary>
+                    <p>
+                        Ao enfrentar desafios práticos e aplicar conceitos aprendidos, o estudante desenvolve habilidades de análise, raciocínio e solução de problemas. Além disso, a resolução de exercícios possibilita a identificação de lacunas no conhecimento, permitindo um estudo mais direcionado e efetivo.
+                    </p>
+                </details>
+                <details>
+                    <summary>Exercícios de Revisão e Recaptulação</summary>
+                    <p>
+                        Esses exercícios têm como objetivo relembrar os principais conceitos estudados anteriormente, fortalecendo as conexões neuronais e reforçando a memória de longo prazo. A revisão periódica é fundamental para evitar a perda de informações e manter o conhecimento fresco na mente.
+                    </p>
+                </details>
+                <details>
+                    <summary>Exercícios de Aplicação</summary>
+                    <p>
+                        Os exercícios de aplicação também podem ser combinados com a utilização de recursos como flashcards, mapas mentais e quizzes. Essas ferramentas proporcionam uma forma interativa e lúdica de revisar e testar os conhecimentos adquiridos. Ao inserir elementos de diversão e desafio no processo de aprendizado, a motivação é estimulada, facilitando o engajamento e a fixação dos conteúdos.
+                    </p>
+                </details>
+                <details>
+                    <summary>Prática regular</summary>
+                    <p>
+                        a prática regular e consistente é fundamental para a fixação dos conteúdos. Estabelecer uma rotina de estudos, reservando um tempo específico para a resolução de exercícios de aplicação, contribui para a consolidação do conhecimento de maneira gradual e contínua. É importante destacar que a variedade de exercícios, abordando diferentes aspectos do conteúdo, favorece uma compreensão mais abrangente e aprofundada.
+                    </p>
+                </details>
+            </div>
+        </div>
+
+    </section>
+    <section class="assuntos" id="assuntos">
+        <div class="title">
+            <h2>Assuntos Específicos em cada Disciplina</h2>
+        </div>
+        <div class="content">
+            <div class="top">4 | Assuntos Espefícicos</div>
+            <p class="p-topo">
+                Neste módulo do curso de Aprendizado Pré vestibular, os alunos terão a oportunidade de aprimorar seus conhecimentos em diversas disciplinas específicas, como Matemática, Física, Química, Biologia, História, Geografia e Língua Portuguesa.
+            </p>
+            <div class="icons-container">
+                <div class="icons" >
+                    <i class="fa-solid fa-list-numeric"></i>
+                    <h2>Matemática</h2>
+                    <p>
+                        Neste módulo, os alunos irão aprender conceitos fundamentais como álgebra, geometria, trigonometria e cálculo. Eles também terão a oportunidade de resolver exercícios práticos que ajudarão a fixar os conceitos aprendidos
+                    </p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-car-battery"></i>
+                    <h2>Física</h2>
+                    <p>
+                         Neste módulo, os alunos irão aprender os princípios fundamentais da mecânica, eletricidade e magnetismo, termodinâmica e óptica. Além disso, eles terão a oportunidade de aplicar esses conceitos na resolução de questões práticas.
+                    </p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-atom"></i>
+                    <h2>Química</h2>
+                    <p>
+                         Neste módulo, os alunos aprenderão sobre a estrutura atômica, tabela periódica, reações químicas, equilíbrio químico e cinética química. Eles também terão a oportunidade de resolver exercícios práticos que ajudarão a consolidar os conceitos aprendidos.
+                    </p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-dna"></i>
+                    <h2>Biologia</h2>
+                    <p>
+                        Neste módulo, os alunos irão aprender sobre células, genética, ecologia, anatomia e fisiologia humana. Eles também terão a oportunidade de aplicar esses conceitos na resolução de questões práticas.
+                    </p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-landmark"></i>
+                    <h2>História e Geografia</h2>
+                    <p>
+                         Neste módulo, os alunos irão aprender sobre história mundial, história do Brasil, geopolítica e economia. Eles também irão desenvolver habilidades de análise crítica e interpretação de mapas e gráficos.
+                    </p>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h2>Língua Portuguesa</h2>
+                    <p>
+                         Neste módulo, os alunos irão aprender sobre gramática, literatura brasileira, interpretação de texto e redação. Eles também terão a oportunidade de praticar suas habilidades de escrita por meio da elaboração de redações.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--área de dúvidas do site-->
+    <section class="duvidas" id="duvidas">
+            <div class="title" id="h1duvidas">
+                    <h2>Dúvidas</h2> 
+            </div>
+        <div class="duvidas-container">    
+            <div class="form-duvidas">
+                <form action="" class="duvidas-form">
+                    <h3 class="">
+                        Mande sua dúvida pra Gente 
+                    </h3>
+                    <div class="input-container">
+                        <span>
+                            Seu nome
+                          <i class="fa-solid fa-user"></i>  
+                        </span>
+                        
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="input-container">
+                        <span>Digite seu E-mail <i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+                    </div>
+                    <div class="input-container">
+                        <span>
+                            Escreva sua Dúvida 
+                            <i class="fa-solid fa-circle-info"></i> 
+                        </span>
+                        <textarea name="duvida" id="duvida" cols="30" rows="10" placeholder="Escreva sua dúvida"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="form-btn" onclick="enviado()">
+                            Enviar Dúvida
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="duvidas-laterais">
+                <h4 class="topduv" > <i class="fa-solid fa-circle-info"></i> | Principais Dúvidas</h4>
+                <div class="container-duvidas-laterais">
+                    <div class="card-duvida">
+                        <details>
+                            <summary>| Quem somos?</summary>
+                            <p>Somos uma equipe que busca facilitar sua vida e lhe garantir não somente a aprovação, mas o aprimoramento pessoal.</p>
+                        </details>
+                    </div>
+                    <div class="card-duvida">
+                        <details>
+                            <summary>| Qual a nossa finalidade?</summary>
+                            <p>
+                                Nosso principal objetivo é fazer com que você conquiste seus sonhos.
+                            </p>
+                        </details>
+                    </div>
+                    <div class="card-duvida">
+                        <details>
+                            <summary>| Qual o melhor plano pra mim?</summary>
+                            <p>
+                                Dependedndo de seus objetivos, os melhores caminhos serão traçados de acordo com seu objetivo maior.
+                            </p>
+                        </details>
+                    </div>
+                    <div class="card-duvida">
+                        <details>
+                            <summary>| Porque escolher vocês?</summary>
+                            <p>
+                                Nossa plataforma traz uma metodologia holística que se diferencia das demais concorrentes, fazendo você, aluno, enxergar as conexões existentes entre todos os conteúdos.
+                            </p>
+                        </details>
+                    </div>
+                    <div class="card-duvida">
+                        <details>
+                            <summary>| Posso cancelar?</summary>
+                            <p>
+                                Caso não esteja satisfeito com a plataforma, sim! 
+                            </p>
+                            <p>
+                                Você entra em contato com a nossa equipe que seu plano será desativado.
+                            </p>
+                        </details>
+                    </div>
+                    <div class="card-duvida">
+                        <details>
+                            <summary>| Vou ter resultado?</summary>
+                            <p>
+                                Caso você usufrua ao máximo da plataforma, utilizando assiduamente todos os componentes que temos a oferecer, sua aprovação é garantida!
+                            </p>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Footer e descrições-->
+    <footer class="footer" id="footer">
+        <div class="container-footer">
+            <div class="title-footer">
+                <a href="#home" id="home">
+                    <img src="Assets/owl.png" alt="">
+                </a>
+                <div class="cards">
+                    <div class="car1 card">
+                        <p class="tip"></p>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="car1 card">
+                        <p class="tip"></p>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="car1 card">
+                        <p class="tip"></p>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="car1 card">
+                        <p class="tip"></p>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>    
+                <div class="row-footer">
+                    <div class="footer-col">
+                        <h4 class="">Atalhos</h4>
+                        <ul>
+                            <li>
+                                <a href="#inicio">Início</a>
+                                <a href="#projetos">Projetos</a>
+                                <a href="">Contato</a>
+                                <a href="">Formulário</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="">Empresa</h4>
+                        <ul>
+                            <li>
+                                <a href="">FAQ</a>
+                                <a href="">Projetos</a>
+                                <a href="">Servidores</a>
+                                <a href="">Patrocinadores</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="">Serviços</h4>
+                        <ul>
+                            <li>
+                                <a href="#services">Principais</a>
+                                <a href="#">Domínio</a>
+                                <a href="">Desenvolvimento web</a>
+                                <a href="">Outros</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sobre Nós</h4>
+                        <ul>
+                            <li><a href="">Fundadores</a>
+                                <a href="">CEO</a>
+                                <a href="">Parceiros</a>
+                                <a href="">Nossa Equipe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            <div class="autoria">
+                <h5 class="">Todos os direitos reservados a <b>- Vinícius Frota</b></h5>
+                <p class="">A presente Política de Privacidade descreve as práticas de privacidade do Portifólio, razão social “Vinícius Frota Dev”, inscrito no CNPJ n° 00.000.000/0001-20 e suas subsidiárias ("nós", "nosso" ou "nos"), sobre como coletamos, usamos, divulgamos e transferimos as informações que você nos fornece em suas interações conosco por meio de nosso website, e-mail e demais comunicações que estejam relacionados ou se refiram à presente política (os "Serviços On-Line").</p>
+            </div>
+        </div>
+    </footer>
+    <script src="jquery/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
