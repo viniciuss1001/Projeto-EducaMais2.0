@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>EducaMais:CriarConta</title>
+        <!--demais configurações do site-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-login.css">
+        <link rel="shortcut icon" href="../Assets/owl.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    </head>
+    <body id="body">
+        <header class="header" id="header">
+        </header>
+        <div class="back"></div>
+        <div class="email-container">
+            <div class="login-form">
+                <div class="login-header">
+                    <i class="fa-solid fa-user-check"></i>
+                    <label for="" class="login-title">Entre na conta!</label>
+                </div>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-google"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="input-container">
+                   <!-- <label for="email">
+                        Ensira seu E-mail
+                        <i class="fa-solid fa-envelope"></i>
+                    </label>
+                -->
+                    <input type="email" placeholder="example@email.com" required id="email">
+                </div>
+                <div class="input-container">
+                   <!-- <label for="senha">
+                        Insira sua senha
+                        <i class="fa-solid fa-lock"></i>  
+                    </label>
+                -->
+                    <input type="password" name="senha" id="senha" class="senha" onkeyup="validarSenha()" placeholder="**********" required>
+                    
+                </div>
+                <div class="mostrarSenha" id="mostrarSenha" ></div>
+                <div class="criar">
+                    <p>
+                        Ainda não tem uma conta criada? <a href="criar.html">Crie</a> 
+                    </p>
+                    <span><a href="#">Esqueceu a senha?</a></span>
+                </div>
+                <div class="login-button">
+                    <button type="submit" onclick="criarConta()" class="">Entrar</button>
+                </div>
+            </div>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>
