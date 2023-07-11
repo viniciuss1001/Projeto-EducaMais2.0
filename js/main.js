@@ -44,6 +44,19 @@ abrirFechar2();
 closeNav();
 closeSide2();
 
+/*abrir e fechar a notificação */
+function openNot(){
+    var Notfy = document.getElementById("notify");
+    Notfy.style.width = "30%";
+    Notfy.style.opacity = "1";
+}
+function closeNot(){
+    var NotfyClose = document.getElementById("notify");
+    NotfyClose.style.width = "0";
+    NotfyClose.style.opacity = "0";
+}
+openNot();
+closeNot();
 //mudar a cor dos links indicando a seção que se está
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
@@ -75,4 +88,22 @@ document.addEventListener("scroll", handleScroll);
 //notificação de que a dúvida foi enviada com sucesso
 function enviado(){
     window.alert('Sua dúvida foi enviada com sucesso!')
+}
+//animação das seções 
+const boxes = document.querrySelectorAll(".box");
+window.addEventListener("scroll", checkBoxes);
+
+checkBoxes();
+
+function checkBoxes(){
+    const triggerBottom = window.innerHeight / 5 * 4;
+    boxes.forEach((box, idx) => {
+        const boxTop = box.getBoundingClientRect().top;
+
+        if(boxTop < triggerBottom){
+            box.classList.add("show");
+        }else{
+            box.classList.remove("show");
+        }
+    });
 }

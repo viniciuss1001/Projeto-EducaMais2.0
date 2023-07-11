@@ -13,32 +13,7 @@ function notificaCriarConta(){
         popup.classList.remove("popupActive");
     });
 
-}
-notificaCriarConta();
-/*Parte de registro: efetuar a verificação de idade */
-/*function verificarIdade(){
-    var data= new Date()
-    var Ano = data.getFullYear()
-    var UserAno = window.document.getElementById("doB");
-    var UserAnoN = Number(UserAno.value)
-    var idaderes = document.getElementById("idade");
-
-
-    
-    if( UserAnoN == 0 || UserAnoN > Ano){
-        idaderes.innerHTML = `Verifique o ano e tente novamente!`
-        idaderes.style.color = `Red`
-        idaderes.style.font = `10px`
-    }else{
-        var idade = Ano - UserAno
-        if(idade <= 14){
-            idaderes.innerHTML = `Você não tem idade o suficiente para acessar`
-        }
-    }
-};
-verificarIdade();*/
-/*parte de validação de senha para entra na conta */
-
+}/*
 function validarSenha(){
     var senha = document.getElementById("senha").value;
     var foca = 0;
@@ -75,6 +50,55 @@ function verificarSenha(){
         res.style.color = "Red"
         res.style.fontSize = `10px`
     }
+}*/
+//parte de verificação e criação de conta
+
+const form = document.getElementById("formCreate");
+const email = document.getElementById("email");
+const password = document.getElementById("pass");
+const password2 = document.getElementById("pass2");
+
+form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    checkInputs();
+});
+function checkInputs() {
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
+
+    if(emailValue === ""){
+        setErrorFor(email, "O E-mail não pode ficar vazio");
+    }else if(!isEmail(emailValue)){
+        setErrorFor(email, "Esse não é um email válido");
+    }else{
+        setSucessFor(email);
+    }
+
+    if(password === ""){
+        setErrorFor(password, "A senha não pode ficar vazia");
+    }else{
+        setSucessFor(password);
+    }
+    
+    if(password2 === ""){
+        setErrorFor(password2, "A confirmação de senha não pode ficar vazia");
+    }else{
+        setSucessFor(password2);
+    }
+};
+function setErrorFor(input, message){
+    const formControl = input.parentElement;
+    const small = documen.querySelector("small");
+
+    formControl.className = `form-control error`;
+    small.innerText = message;
+
+}
+function setSucessFor(input){
+    const formControl = input.parentElement;
+    formControl.className = `form-control sucess`;
 }
 /* modo noturno na área para entrar*/
 var noturno = document.getElementById("noturno");

@@ -101,10 +101,30 @@
                         <input type="text" name="ddd" id="ddd" placeholder="Telefone fixo" class="input-t ddd">
                         <input type="tel" name="usertel" id="usertel" placeholder=" Telefone Celular" class="input-t">
                     </div>
-                    <div class="email">
-                        <input type="email" name="email" id="email" placeholder="E-mail" class="input-t email-user">
-                        <input type="password" name="pass" id="pass" placeholder="Senha" class="input-t password-user">
-                    </div>
+                    <form action="" class="formCreate" id="formCreate">
+                        <div class="email">
+                        <!--e-mail-->
+                            <input type="email" name="email" id="email" placeholder="E-mail" class="input-t email-user">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Mensagem de erro</small>
+                        </div>
+                        <div class="email">
+                            <!--senha e confirmação de senha-->
+                                <input type="password" name="pass" id="pass" placeholder="Senha" class="input-t password-user">
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small>Mensagem de erro</small>
+                        </div>
+                        <div class="email">
+                            <!--confirmação de senha-->
+                                <input type="password" name="pass" id="pass2" placeholder="Confirmar Senha" class="input-t password-user" >
+                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <small>Mensagem de Erro</small>
+                        </div>
+                    </form>
+                    
                     <div class="aceppt">
                         <div class="container">
                             <input type="checkbox" id="cbx" style="display: none;">
@@ -117,7 +137,7 @@
                         </div>
                         <span>Li e aceito com os <a href="#">Termos e Condições</a></span>
                     </div>
-                    <a href="#" class="registrar" onclick="notificaCriarConta()" id="r-btn">Registrar</a>
+                    <a href="#" class="registrar" onclick="notificaCriarConta(), checkInputs(), setSucessFor(), setErrorFor()" id="r-btn">Registrar</a>
                 </div>
                 <div class="general-nav2">
                     <p>

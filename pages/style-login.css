@@ -426,15 +426,51 @@ select:focus{
 .contact-inf .number .ddd{
     width: 40%;
 }
-.contact-inf .email .email-user{
-    width: 95%;
-}
+/*parte do email e validação do email*/
+.contact-inf .email .email-user,
 .contact-inf .email .password-user{
     width: 95%;
+    transition: .3s ease-in-out;
+}
+.contact-inf .email .email-user:focus, 
+.contact-inf .email .password-user:focus{
+    outline: none;
+    border-color: #777;
 }
 .contact-inf input:focus,
 select:focus{
     background-color: rgba(255, 255, 255, 0.241);
+}
+/*parte de mudança de cor de acordo com a verificação */
+.contact-inf .email.sucess input{
+    border-color: #2ecc71;
+}
+.contact-inf .email.error input{
+    border-color: #e74c3c;
+}
+.contact-inf .email i{
+    visibility: hidden;
+    position: absolute;
+    top: 1.5rem;
+    right: .5rem;
+}
+.contact-inf .email.sucess i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+.contact-inf .email.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+.contact-inf .email small{
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+    color: #e74c3c;
+}
+.contact-inf .email.error small{
+    visibility: visible;
 }
 /*parte abaixo do preenchimento de informações*/
 .contact-inf .aceppt{
