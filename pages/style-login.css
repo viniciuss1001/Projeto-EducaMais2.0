@@ -156,7 +156,7 @@ body{
     flex-direction: column;
     position: relative;
 }
-.login-button button{
+.login-button a{
     padding: 1rem;
     border: none;
     outline: none;
