@@ -43,6 +43,7 @@ section{
     padding: 2rem 9%;
 }
 .sideBar{
+    position: fixed;
     height: 100%;
     width: 5%;
     background: #dbdada;
