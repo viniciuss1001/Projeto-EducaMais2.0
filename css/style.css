@@ -518,7 +518,7 @@ section{
 }
 .geral .content h3{
     text-align: center;
-    color:var(--C3);
+    color:#ffff;
     font-size: 3rem;
     font-weight: 700;
     margin: 0rem 0;
