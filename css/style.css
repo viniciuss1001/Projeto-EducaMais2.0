@@ -504,11 +504,12 @@ section{
 /*área de visão geral do curso*/
 .geral{
     margin-top: 2rem;
-    height: 70vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     flex-grow: 1;
+    background-color: green;
 }
 .geral .content{
     padding: 1rem;
