@@ -514,30 +514,40 @@ section{
     padding: 1rem;
     width: 50%;
     background-color: none;
+    border-radius: .5rem;
 }
 .geral .content h3{
     text-align: center;
-    color: var(--D1);
+    color:var(--C3);
     font-size: 3rem;
-    font-weight: 300;
-    margin: 1rem 0;
+    font-weight: 700;
+    margin: 0rem 0;
     text-decoration: none;
-    border-bottom: 1px solid var(--D2);
-
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .geral .content h4{
+    padding: 1rem 0;
     font-weight: 300;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     text-align: center;
+    
 }
 .geral .content p{
+    padding: 1rem 1rem;
+    padding-bottom: 2rem;
     color: var(--D1);
     text-indent: 3rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin: 0 auto;
     font-weight: 200;
-
+    width: 100%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.geral .content h4,p{
+    background: #f8f9fa;
 }
 .geral .geral-img{
     width: 45%;
@@ -545,7 +555,7 @@ section{
     background-color: none;
 }
 .geral .geral-img img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     border-radius: 1rem;
 }
