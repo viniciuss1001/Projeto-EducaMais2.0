@@ -46,7 +46,7 @@ section{
     position: fixed;
     height: 100%;
     width: 5%;
-    background: #dbdada;
+    background: #f8f9fa;
     font-size: 1rem;
     padding: 1rem;
     display: flex;
@@ -103,6 +103,7 @@ section{
 .sideBar a{
     text-decoration: none;
     color: var(--A1);
+    width: 90%;
     background-color: transparent;
     transition: .3s ease-in-out;
     
@@ -119,6 +120,8 @@ section{
     justify-content: space-around;
 }
 .sideBar a:hover{
+    padding: .5rem auto;
+    width: 85%;
     background: var(--A3);
     border-radius: .5rem;
 }
