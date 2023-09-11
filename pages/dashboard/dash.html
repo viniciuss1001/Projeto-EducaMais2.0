@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--fim das fontes-->
 
     <!--metas de descrição -->
@@ -23,52 +24,60 @@
     <meta name="author" content="Vinícius Frota">
 </head>
 <body>
-    <div class="sideBar" id="sideBar">
-        <button onclick="sidebarClose()">
-            <i class="fa-solid fa-x"></i>
+  
+    <div class="own sideBar">
+      <div class="container-own">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+          <img src="../../Assets/owl.png" alt="">
         </button>
-        <a href="" class="img">
-            <img src="../../Assets/owl.png" alt="">
-        </a>
-        <a href="">
-            <i class="fa-solid fa-house-chimney-user"></i> 
-            <span>Página Principal</span>
-        </a>
-        <a href="">
-            <i class="fa-solid fa-book"></i>
-            <span>Cursos</span>
-        </a>
-        <a href="">
-            <i class="fa-solid fa-list-check"></i>
-            <span>Questões</span>
-        </a>
-        <a href="">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <span>Lista e Simulados</span>
-        </a>
-        <a href="">
-            <i class="fa-sharp fa-solid fa-chart-simple"></i>
-            <span>Desempenho</span>
-        </a>
-        <a href="">
-            <i class="fa-solid fa-calculator"></i>
-            <span>Calculadora TRI</span>
-        </a>
-        <a href="">
-            <i class="fa-solid fa-clipboard"></i>
-            <span>Vestibulares</span>
-        </a>
-        <a href="">
-            <i class="fa-solid fa-message"></i>
-            <span>FAQ</span>
-        </a>
-        <a href="">
-            <i class="fa-solid fa-user"></i>
-            <span>Minha conta</span>
-        </a>
+      </div>
     </div>
-    <section class="slider" id="slider">
-        <div class="contaier"></div>
+    <!--área da sideBar-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Estuda Certo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos assumenda eius eveniet velit voluptatem a doloribus aliquid debitis nobis ea veniam nesciunt deleniti odit, molestias dicta ab qui animi.
+      </div>
+    </div>
+    <section id="dashHome" class="dashHome">
+      <h2>Olá, bem vindo de volta!</h2>
+      <h3>Vamos estudar?</h3>
+      
+      <section class="slider" id="slider">
+        <div class="container">
+            <div id="carouselExampleRide" class="carousel slide d-flex" data-bs-ride="true">
+              <div class="carousel-inner align-items-center d-flex justify-content-between">
+                <div class="carousel-item active">
+                  <img src="../../Assets/Competitive intelligence-amico.png" alt="" class="d-flex ">
+                </div>
+                <div class="carousel-item">
+                  <img src="../../Assets/boy on graduation-amico.png" alt="" class="d-flex">
+                </div>
+                <div class="carousel-item">
+                  <img src="../../Assets/girl on graduation-rafiki.png" alt="" class="d-flex " >
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+        </div>
+      </section>
+      <a href="">
+        <i class="fa-chevron-circle-down"></i>
+      </a>
     </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../../jquery/jquery.js"></script>
+    <script src="dash.js"></script>
 </body>
 </html>
