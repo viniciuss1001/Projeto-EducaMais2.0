@@ -42,6 +42,26 @@ html{
 section{
     padding: 2rem 9%;
 }
+#barDash{
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 95%;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    cursor: pointer;
+}
+header{
+    position: absolute;
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+
+}
+#offcanvasWithBothOptions{
+    background: var(--primary);
+    border: none;
+}
 .dashHome{
     background-color: var(--primary);
     height: 95vh;
@@ -76,6 +96,7 @@ section{
     height: 50vh;
     width: 60vw;
     background-color: var(--primary-light);
+    box-shadow: var(--box-shadow);
     border: none;
     border-radius: 2rem;
 }
@@ -95,6 +116,7 @@ section{
     margin: 0 auto;
     border-radius: 2rem;
 }
+
 .dashHome h2,
 .dashHome h3{
     color: #fff;
