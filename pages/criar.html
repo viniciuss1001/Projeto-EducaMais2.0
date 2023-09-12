@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>EducaMais:Login</title>
+        
         <!--demais configurações do site-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,19 +16,25 @@
     <body id="body">
         <header class="header" id="header">
         </header>
-        <div class="back">i</div>
-        <div class="popup-div">
-            <div class="popupContainer">
-               <i class="fa-solid fa-check-circle"></i>
-               <h2>
-                   Criada com sucesso!
-               </h2>
-               <p>
-                   Obrigado! Agora aproveite ao máximo nossa plataforma!
-               </p>
-               <div class="close" id="close">Entendido</div>
+        <div class="captcha-div">
+            <div class="captcha-Container">
+               <header><h2>Verificação de Captcha</h2></header>
+               <div class="input-field captcha-box">
+                    <input type="text" name="" id="" value="" disabled>
+                    <button class="refresh" id="refresh">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+               </div>
+               <div class="input-field captcha-input">
+                <input type="text" name="" id="" placeholder="Insira o Captcha">
+               </div>
+               <div class="msgCaptcha">Código de validação está correto</div>
+               <div class="input-field button disabled" id="CaptchaButton">
+                <button id="ButtonforCaptcha">Enviar Captcha</button>
+               </div>
            </div>
        </div>
+       <!--
         <div class="email-container" id="criar-container">
             <div class="login-form" id="criar-form" >
                 <div class="login-header" >
@@ -103,28 +109,26 @@
                     </div>
                     <form action="" class="formCreate" id="formCreate">
                         <div class="email">
-                        <!--e-mail-->
+
                             <input type="email" name="email" id="email" placeholder="E-mail" class="input-t email-user">
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <small>Mensagem de erro</small>
                         </div>
                         <div class="email">
-                            <!--senha e confirmação de senha-->
                                 <input type="password" name="pass" id="pass" placeholder="Senha" class="input-t password-user">
                                     <i class="fas fa-check-circle"></i>
                                     <i class="fas fa-exclamation-circle"></i>
                                     <small>Mensagem de erro</small>
                         </div>
                         <div class="email">
-                            <!--confirmação de senha-->
                                 <input type="password" name="pass" id="pass2" placeholder="Confirmar Senha" class="input-t password-user" >
                                     <i class="fas fa-check-circle"></i>
                                     <i class="fas fa-exclamation-circle"></i>
                                     <small>Mensagem de Erro</small>
                         </div>
                     </form>
-                    
+                
                     <div class="aceppt">
                         <div class="container">
                             <input type="checkbox" id="cbx" style="display: none;">
@@ -147,10 +151,8 @@
                     <a href="../index.html"><i class="fa-solid fa-home"></i></a>
                     <a href=""><i class="fa-solid fa-info-circle"></i></a>
                 </div>
-            </div>
-            
-        </div>
-        
+            </div>-->
+
         <script src="login.js"></script>
     </body>
 </html>

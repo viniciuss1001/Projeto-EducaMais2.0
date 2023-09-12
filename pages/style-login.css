@@ -13,7 +13,9 @@
     
     --primary: #155bd5;
     --primary-D: #1c3ab6;
-    --primary-light: #e2f1ff
+    --primary-light: #e2f1ff;
+    --box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.04),
+    0px 16px 24px rgba(96, 97, 112, 0.16);
 }
 *{
     margin: 0;
@@ -28,6 +30,101 @@ body{
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+}
+/*validação de captcha*/
+.captcha-Container{
+    position:relative;
+    max-width: 18rem;
+    width: 100%;
+    border-radius: 1.2rem;
+    padding: 1rem 1.5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+.captcha-Container header{
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.input-field{
+    position: relative;
+    height: 2.8rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+.refresh{
+    position: absolute;
+    top: 50%;
+    right: .6rem;
+    transform: translateY(-50%);
+    background: var(--primary);
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.refresh:active{
+    transform: translateY(-50%) scale(0.98);
+}
+.input-field input,
+#CaptchaButton{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+}
+.input-field input{
+    padding: .5rem .5rem;
+    border:1px solid rgba(0, 0, 0, 0.1) ;
+}
+.input-field input::placeholder{
+    font-size: 1rem;
+    color: #3d3d3d;
+}
+.captcha-box input{
+    color: #6b6b6b;
+    font-size: 22px;
+    pointer-events: none;
+}
+.captcha-box input:focus{
+    box-shadow: var(--box-shadow);
+}
+.msgCaptcha{
+    font-size: .8rem;
+    margin: 1rem 0;
+    color: var(--primary);
+    display: none;
+}
+.msgCaptcha.active{
+    display: block;
+}
+#ButtonforCaptcha{
+    background: var(--primary);
+    width: 100%;
+    border-radius: .5rem;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: var(--C1);
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+#CaptchaButton:active{
+    transform: scale(.99);
+}
+#CaptchaButton.disabled{
+    opacity: 0.6;
+    pointer-events: none;
 }
 .back{
     height: calc(100vh + 1rem);

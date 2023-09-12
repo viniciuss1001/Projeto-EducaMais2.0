@@ -13,45 +13,63 @@ function notificaCriarConta(){
         popup.classList.remove("popupActive");
     });
 
-}/*
-function validarSenha(){
-    var senha = document.getElementById("senha").value;
-    var foca = 0;
-    var res = document.getElementById("mostrarSenha");
-    
-    if((senha.length) == ""){
-        res.innerHTML = ``
-    }
-    else if((senha.length) <= 8){
-        res.style.fontSize =`10px`
-        res.style.color = "red"
-        res.style.fontWeight = "300"
-        res.innerHTML =`Sua senha é muito curta, favor revisar`
-    }else if((senha.length) > 8 && (senha.length) < 16){
-        res.innerHTML = `Senha aceita!`
-        res.style.color = "Blue"
-    }else{
-        res.innerHTML = `Sua senha excedeu 16 caracteres`
-        res.style.color = "Orange"
-    }
-
 }
-function verificarSenha(){
-    var senhaA = document.getElementById("senha").value;
-    var senhaB = document.getElementById("senha2").value;
-    var res = document.getElementById("mostrarSenha");
+//parde de confirmação captcha
+  const captchaTextBox = document.querySelector(".captcha-box input")
+  const refreshButton = document.getElementById("refresh")
+  const captchaInputBox = document.querySelector(".captcha-input input")
+  const captchaMensagem = document.querySelector(".msgCaptcha")
+  const captchaSubmitButton = document.getElementById("CaptchaButton")
 
-    if((senhaA.value) === (senhaB.value)){
-        res.innerHTML =`As senhas estão de acordo`;
-        res.style.color = "Green"
-        res.style.fontSize = `10px`
-    }else if((senhaA.value) != (senhaB.value)){
-        res.innerHTML = `As senhas são diferentes!`
-        res.style.color = "Red"
-        res.style.fontSize = `10px`
+  let captchaText = null//iniciar o captcha com valor nulo
+
+  const generateCaptcha = function(){
+    const radomString = Math.random().toString(36).substring(2, 7);
+    const randomStringArray = radomString.split("");
+    const changeString = randomStringArray.map((char)=> (Math.random() > 0.5 ? char.toUpperCase() : char ));
+    captchaText = changeString.join(" ");
+
+    captchaTextBox.value = captchaText;
+    console.log(captchaText);
+  };
+
+  const refreshBtnClick = function(){//função para reiniciar os valores de captcha
+    generateCaptcha();
+    captchaInputBox.value = "";
+    chaptchakeyUpValidate();
+
+  };
+  const chaptchakeyUpValidate = function(){
+    captchaSubmitButton.classList.toggle("disabled", !captchaInputBox.value);
+    if(!captchaInputBox.value){
+        captchaMensagem.classList.remove("active");
     }
-}*/
-//parte de verificação e criação de conta
+  };
+  const subimitBtnClick = function(){//validar o código captcha que foi inserido
+    captchaText = captchaText
+    .split("")
+    .filter((char)=> char !== " ")
+    .join("");
+    captchaMensagem.classList.add("active");
+
+    //verificar se o texto inserido é válido ou não 
+    if(captchaInputBox.value === captchaText){
+        captchaMensagem.innerText = "Código inserido está correto"
+        captchaMensagem.style.color = "#826afb"
+    }else{
+        captchaMensagem.innerText = "Còdigo inserido é inválido"
+        .captchaMensagem.style.color = "#FF2525"
+    }
+  };
+  //declaração das funções para execução
+  refreshButton.addEventListener("click", refreshBtnClick);
+  captchaInputBox.addEventListener("keyup", chaptchakeyUpValidate);
+  captchaSubmitButton.addEventListener("click", subimitBtnClick);
+
+  //gerar o captcha quando a página for gerada
+  generateCaptcha();
+
+  //parte de verificação e criação de conta
 
 const form = document.getElementById("formCreate");
 const email = document.getElementById("email");
