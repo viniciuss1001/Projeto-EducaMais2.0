@@ -16,9 +16,53 @@
     <body id="body">
         <header class="header" id="header">
         </header>
+        <section class="formSection" id="formSection">.
+            <form action="" class="formCreate" id="form">
+                <p class="titleCreate">Registro</p>
+                <p class="msgRegister">
+                    Crie sua conta agora e tenha acesso ao conhecimeto ilimitado!
+                </p>
+            <div class="formflex">
+                <label for="">
+                    <input type="text" required placeholder="" class="inputRegister">
+                    <span>Nome</span>
+                </label>
+                <label for="">
+                    <input type="text" required placeholder="" class="inputRegister">
+                    <span>Sobrenome</span>
+                </label>
+
+            </div>
+            <label for="">
+                <input type="email" required placeholder="" class="inputRegister">
+                <span>Email</span>
+            </label>
+            <label for="">
+                <input type="password" required placeholder="" class="inputRegister">
+                <span>Senha</span>
+            </label>
+            <label for="">
+                <input type="password" required placeholder="" class="inputRegister">
+                <span>Confirme a senha</span>
+            </label>
+                <a href="#CaptchaSection" class="LinkSubmitButton">
+                    <button class="submitRegister" >Criar</button> 
+                </a>
+            <p class="SingIn">Já possui uma conta?<a href="entrar.html">Entre</a></p>
+        </form> 
+        </section>
+       <!--aplicação do captcha-->
+       <section class="captchaSection" id="CaptchaSection">
         <div class="captcha-div">
-            <div class="captcha-Container">
-               <header><h2>Verificação de Captcha</h2></header>
+            <div class="captcha-Container ">
+                <header>
+                    <h2>Verificação de Captcha</h2>
+                    <span>
+                        <a href="#formSection" style="color:#155bd5 ;">
+                            <i class="fa-solid fa-close"></i>
+                        </a>
+                    </span>
+                </header>
                <div class="input-field captcha-box">
                     <input type="text" name="" id="" value="" disabled>
                     <button class="refresh" id="refresh">
@@ -34,125 +78,8 @@
                </div>
            </div>
        </div>
-       <!--
-        <div class="email-container" id="criar-container">
-            <div class="login-form" id="criar-form" >
-                <div class="login-header" >
-                    <label for="" class="login-title">
-                        Crie sua Conta!
-                    </label>
-                </div>
-                <div class="general-inf">
-                    <h2>Informações Gerais</h2>
-                    <div class="nvl-estudo">
-                        <select name="education" id="education" aria-placeholder="Nível de Escolaridade">
-                            <option value="">Ensino Médio Completo</option>
-                            <option value="">Cursando Ensino Médio</option>
-                            <option value="">Ensino Fundamental Concluído</option>
-                            <option value="">Cursando o Ensino Fundamental</option>
-                        </select>
-                    </div>
-                    <div class="user-name">
-                        <input type="text" name="user-n" id="nome" placeholder="Nome" required>
-                        <input type="text" name="user-sobre" id="sobrenome" placeholder="Sobrenome" required>
-                    </div>
-                    <div class="gender">
-                        <select name="gender" id="gender">
-                            <option value="Gênero" selected>Escolha seu gênero</option>
-                            <option value="Masc">Masculino</option>
-                            <option value="Fem">Feminino</option>
-                            <option value="Out">Outro</option>
-                        </select>
-                    </div>
-                    <div class="scho">
-                        <input type="text" name="schooll" id="schooll" placeholder="Nome da Escola">
-                    </div>
-                    <div class="future">
-                        <input type="text" name="curse" id="curse" placeholder="Curso desejado">
-                        <select name="areas" id="areas">
-                            <option value="eng">Engenharia</option>
-                            <option value="">Ciências Biológicas</option>
-                            <option value="">Ciências Humanas</option>
-                            <option value="">Ciências Matemáticas</option>
-                            <option value="">Pedagogia</option>
-                            <option value="saude">Saúde</option>
-                            <option value="other">Outro</option>
-                        </select>
-                    </div>
-                    <div class="general-nav">
-                        <p>
-                            Já tem uma conta criada? <a href="entrar.html">Entre</a>
-                        </p>
-                        <a href="entrar.html"><i class="fa-solid fa-chevron-circle-left"></i></a>
-                        <a href="../index.html"><i class="fa-solid fa-home"></i></a>
-                        <a href=""><i class="fa-solid fa-info-circle"></i></a>
-                    </div>
-                </div>
-                <div class="contact-inf">
-                    <h2>Informações de Contato</h2>
-                    <div class="streetD">
-                       <input type="text" name="street" id="st" placeholder="Rua + Número" required> 
-                       <input type="text" name="infMore" id="infMore" placeholder="informações Adiconais">
-                    </div>
-                    <div class="postal">
-                        <input type="text" name="postal" id="postal" placeholder="Código Postal/CEP" class="input-t">
-                        <select name="userhome" id="userhome">
-                            <option value="">Casa</option>
-                            <option value="">Apartamento</option>
-                            <option value="">Condomínio</option>
-                        </select>
-                        <input type="text" name="state" id="state" placeholder="Cidade" class="input-t city" >
-                    </div>
-                    <div class="number">
-                        <input type="text" name="ddd" id="ddd" placeholder="Telefone fixo" class="input-t ddd">
-                        <input type="tel" name="usertel" id="usertel" placeholder=" Telefone Celular" class="input-t">
-                    </div>
-                    <form action="" class="formCreate" id="formCreate">
-                        <div class="email">
-
-                            <input type="email" name="email" id="email" placeholder="E-mail" class="input-t email-user">
-                                <i class="fas fa-check-circle"></i>
-                                <i class="fas fa-exclamation-circle"></i>
-                                <small>Mensagem de erro</small>
-                        </div>
-                        <div class="email">
-                                <input type="password" name="pass" id="pass" placeholder="Senha" class="input-t password-user">
-                                    <i class="fas fa-check-circle"></i>
-                                    <i class="fas fa-exclamation-circle"></i>
-                                    <small>Mensagem de erro</small>
-                        </div>
-                        <div class="email">
-                                <input type="password" name="pass" id="pass2" placeholder="Confirmar Senha" class="input-t password-user" >
-                                    <i class="fas fa-check-circle"></i>
-                                    <i class="fas fa-exclamation-circle"></i>
-                                    <small>Mensagem de Erro</small>
-                        </div>
-                    </form>
-                
-                    <div class="aceppt">
-                        <div class="container">
-                            <input type="checkbox" id="cbx" style="display: none;">
-                            <label for="cbx" class="check">
-                                <svg width="18px" height="18px" viewBox="0 0 18 18">
-                                    <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                        </div>
-                        <span>Li e aceito com os <a href="#">Termos e Condições</a></span>
-                    </div>
-                    <a href="#" class="registrar" onclick="notificaCriarConta(), checkInputs(), setSucessFor(), setErrorFor()" id="r-btn">Registrar</a>
-                </div>
-                <div class="general-nav2">
-                    <p>
-                        Já tem uma conta criada? <a href="entrar.html">Entre</a>
-                    </p>
-                    <a href="entrar.html"><i class="fa-solid fa-chevron-circle-left"></i></a>
-                    <a href="../index.html"><i class="fa-solid fa-home"></i></a>
-                    <a href=""><i class="fa-solid fa-info-circle"></i></a>
-                </div>
-            </div>-->
-
+       </section>
+        
         <script src="login.js"></script>
     </body>
 </html>

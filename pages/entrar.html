@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>EducaMais:CriarConta</title>
+        
         <!--demais configurações do site-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,48 +16,37 @@
     <body id="body">
         <header class="header" id="header">
         </header>
-        <div class="back"></div>
-        <div class="email-container">
-            <div class="login-form">
-                <div class="login-header">
-                    <i class="fa-solid fa-user-check"></i>
-                    <label for="" class="login-title">Entre na conta!</label>
-                </div>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-google"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="input-container">
-                   <!-- <label for="email">
-                        Ensira seu E-mail
-                        <i class="fa-solid fa-envelope"></i>
-                    </label>
-                -->
-                    <input type="email" placeholder="example@email.com" required id="email">
-                </div>
-                <div class="input-container">
-                   <!-- <label for="senha">
-                        Insira sua senha
-                        <i class="fa-solid fa-lock"></i>  
-                    </label>
-                -->
-                    <input type="password" name="senha" id="senha" class="senha" onkeyup="validarSenha()" placeholder="**********" required>
-                    
-                </div>
-                <div class="mostrarSenha" id="mostrarSenha" ></div>
-                <div class="criar">
-                    <p>
-                        Ainda não tem uma conta criada? <a href="criar.html">Crie</a> 
-                    </p>
-                    <span><a href="#">Esqueceu a senha?</a></span>
-                </div>
-                <div class="login-button">
-                    <a type="submit" onclick="criarConta()" class="" href="dashboard/dash.html">Entrar</a>
-                </div>
+        <form action="" class="formCreate">
+            <div class="logo"></div>
+            <div class="titleCreate">Entrar na conta</div>
+            <p class="msgRegister">Entre e volte a ter acesso ao conhecimento ilimitado!</p>
+            <br>
+            <div class="inputContainerEnter">
+                <label for="email">Email</label>
+                <input type="email" class="inputRegister" required placeholder="exemplo@email.com">
             </div>
-        </div>
+            <div class="inputContainerEnter">
+                <label for="password">Senha</label>
+                <input type="password" class="inputRegister" required placeholder="senha">
+            </div>
+            <p class="msgRegister">Ainda não tem conta? <a href="criar.html">Crie</a></p>
+            <button class="submitRegister">Entrar</button>
+            <div class="separator">
+                <hr class="line">
+                <span>Ou</span>
+                <hr class="line">
+            </div>
+            <button class="enterAlternative google">
+                <i class="fa-brands fa-google"></i>
+                <span>Entre com o goole</span>
+            </button>
+            <button class="enterAlternative microsoft">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>Entre com sua conta Microsoft</span>
+            </button>
+            <p class="terms"><a href="#">Termos &amp; condições de uso</a></p>
+        </form>
+        
         <script src="login.js"></script>
     </body>
 </html>
