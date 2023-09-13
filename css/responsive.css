@@ -272,7 +272,7 @@
     .blog .blog-img img{
         width: 40%;
     }
-}
+
 @media(max-width:668px){
     .duvidas{
         background-color: none;
@@ -322,4 +322,4 @@
         margin: 10% auto;
         background-color: nonw;
     }
-    
+}

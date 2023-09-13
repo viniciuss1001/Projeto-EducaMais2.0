@@ -1,3 +1,5 @@
 # Projeto-EducaMais
- My first project with HTML, CSS and JS
- utilizando as ferramentas que já domino na área do Front-End, o projeto apresentado a seguir é de forma condensada, a maior parte dos conhecimentos em tecnologia e suas aplicações.
+//English
+    This Front-End project is a notable example of attractive, innovative, modern and captivating design. It was meticulously created using fundamental Front-End tools, including JavaScript for dynamic interactivity, Bootstrap for a solid and responsive structure, HTML for semantic structuring, and CSS for elegant styling. The result is a user experience that not only meets expectations, but exceeds them, captivating visitors with stunning visuals and exceptional functionality. It's a testament to the power of Front-End in creating truly impactful web interfaces.
+//Portuguese
+    Este projeto Front-End é um exemplo notável de design atrativo, inovador, moderno e cativante. Ele foi meticulosamente criado utilizando as ferramentas fundamentais do Front-End, incluindo JavaScript para interatividade dinâmica, Bootstrap para uma estrutura sólida e responsiva, HTML para estruturação semântica e CSS para estilização elegante. O resultado é uma experiência de usuário que não apenas atende às expectativas, mas as supera, cativando os visitantes com um visual impressionante e uma funcionalidade excepcional. É um testemunho do poder do Front-End na criação de interfaces web verdadeiramente impactantes.
