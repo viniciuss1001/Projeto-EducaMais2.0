@@ -1,0 +1,325 @@
+:root{
+    --A1: #051923;
+    --A2: #003554;
+    --A3: #006494;
+    --A4: #0582CA;
+    --A5: #00A6FB;
+
+    --C1: #393939;
+    --C2: #E0DCDC;
+    --C3: #FFFBFB;
+    --V2: #CA0101;
+    --V3: #E30613;
+
+    --D1: #02010A;
+    --D2: #04052E;
+    --D3: #140152;
+    --D4: #22007C;
+    --D5: #0D00A4;
+
+    --primary: #155bd5;
+    --primary-D: #1c3ab6;
+    --primary-light: #e2f1ff;
+    --box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.04),
+    0px 16px 24px rgba(96, 97, 112, 0.16);
+}
+/*media querys para responsivo*/
+
+    
+@media(max-width: 991px){
+
+    .inicio{
+        height: auto;
+    }
+    .inicio .home{
+        background-color: none;
+        width: 100%;
+    }
+    .inicio .home-img{
+        background-color: none;
+        width: 100%;
+    }
+    .geral{
+        background-color: none;
+        padding-top: 0;
+        padding-left: 2rem;
+        justify-content: space-around;
+    }
+    .geral .content{
+        background-color: none;
+        width: 45%;
+    }
+    .geral-img{
+        background-color: none;
+        width: 35%;
+    }
+    .inicio .home-buttons{
+        display: flex;
+        margin-top: 0;
+        position: relative;
+        width: 75%;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .icons-container{
+        padding: .2rem .2rem;
+        gap: .4rem;
+    }
+    .icons{
+        width: 100%;
+    }
+    .form-duvidas{
+        width: 62%;
+        background-color: #cdcdcd;
+    }
+    .duvidas-laterais{
+        background-color: transparent;
+        width: 35%;
+        margin-left: 0;
+    }
+}
+@media(max-width: 768px){
+    section{
+        padding: 1rem 2px;
+    }
+    html{
+        scroll-padding: 0;
+    }
+    #bar{
+        font-size: 1.7rem;
+        cursor: pointer;
+        z-index: 1500;
+        color: white;
+        width: 20%;
+        margin-left: 50%;
+        right: 1rem;
+    }
+    #bar2{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .Side2{
+        z-index: 0;
+    }
+    .entrar, .registrar{
+        padding: 0;
+        z-index: 00;
+        background: transparent;
+        color: transparent;
+        width: 0;
+    }
+    .header{
+        width: 100%;
+        padding: 0rem;
+    }
+    .header .navbar{
+        top: 115%;
+        width: 90%;
+        display: none;
+    }
+    .header .navbar.active{
+        opacity: 1;
+        transition: .2s ease-in-out;
+    }
+    .header .navbar a{
+        font-size: 0rem;
+        display: none;
+
+    }
+    .header .logo{
+        text-align: center;
+        display: flex;
+
+    }
+    /*responsividade do menu*/
+    .inicio{
+        height: auto;
+        width: 100%;
+    }
+    .inicio .home{
+        width: 100%;
+        text-align: center;
+    }
+    .inicio .home-img{
+        width: 100%;
+        background-color: none;
+        display: none;
+    }
+    .inicio .home-img img{
+        width: 75%;
+        height: auto;
+    }
+    .inicio .home-buttons{
+        display: flex;
+        margin-top: 0;
+        position: relative;
+        width: 75%;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #entrar,
+    #registrar{
+        width: 0;
+        z-index: 00;
+        background: transparent;
+        color: transparent;
+        animation: none;
+        cursor: default;
+    }
+     #entrar:hover,
+     #registrar:hover{
+        background: none;
+        color: transparent;
+
+    }
+    .sidenav .entrar, 
+    .sidenav .registrar{
+        font-size: 95%;
+    }
+    .sidenav a{
+        margin-left: .5rem;
+    }
+    .geral{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .geral .content{
+        width: 100%;
+    }
+    .geral .geral-img{
+        width: 100%;
+    }
+    #geralImg,
+    #homeImg{
+        display: none;
+    }
+}
+    .habilidades .content{
+        padding: 1rem 10px;
+    }
+    .habilidades .content h2{
+        font-size: 90%;
+    }
+    .habilidades .content p{
+        font-size: 85%;
+    }
+    .icons-container .icons{
+        width: 100%;
+    }
+    .top{
+        width: 100%;
+        text-align: center;
+    }
+    .praticas .content{
+        display: inline-block;
+        background: none;
+    }
+    .praticas .content .container{
+        width: 100%;
+    }
+    .praticas .content .detalhes{
+        width: 95%;
+        padding: 0;
+    }
+    .duvidas{
+        background-color: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .duvidas-container{
+        background-color: #dcdcdc;
+        display: inline-block;
+    }
+    .form-duvidas{
+        display: flex;
+        background-color: transparent;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .duvidas-form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .duvidas-laterais{
+        margin: 0 auto;
+        background-color: transparent;
+        padding: 0;
+        width: 100%;
+    }
+    .container-duvidas-laterais{
+        background-color: transparent;
+        padding: none;
+        width: 100%;
+    }
+    .card-duvida{
+        background-color: transparent;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .blog .container{
+        display: inline-block;
+    }
+    .blog .card-blog{
+        width: 100%;
+    }
+    .blog .blog-img{
+        width: 40%;
+    }
+    .blog .blog-img img{
+        width: 40%;
+    }
+}
+@media(max-width:668px){
+    .duvidas{
+        background-color: none;
+        display: inline-block;
+        align-items: center;
+    }
+}
+@media(max-width:500px){
+        .header{
+            padding-left: .1rem;
+        }
+        
+    }
+    /*footer em responsivo*/
+@media(max-width:768px){
+    .title-footer{
+        display: flex;
+        grid-template-columns: repeat(autofit, minmax(10rem, 1fr));
+        border-bottom: 2px solid white;
+    }
+    .footer .cards{
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        margin-left: auto;
+        position: relative;
+        
+    }
+    .footer .cards .card{
+        margin-top: 2rem;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+@media(max-width:500px){
+    .footer .title-footer{
+        display: inline-block;
+        margin: 0 auto;
+        align-items: center;
+    }
+}
+/*responsividade da área de registreo e criação de conta*/
+@media(max-width:768px) {
+    .formCreate{
+        max-width: 80%;
+        width: 100%;
+        margin: 10% auto;
+        background-color: nonw;
+    }
+    
