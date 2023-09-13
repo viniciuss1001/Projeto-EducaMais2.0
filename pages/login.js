@@ -71,65 +71,40 @@ function notificaCriarConta(){
 
   //parte de verificação e criação de conta
 
-const form = document.getElementById("formCreate");
-const email = document.getElementById("email");
-const password = document.getElementById("pass");
-const password2 = document.getElementById("pass2");
+//criação de senha
+const passwordInput = document.getElementById("passwardVerifyCreate")
+const eyeIcon = document.getElementById("eyeIcon")
+const requerimentList = document.querySelectorAll(".requerimentList li")
+//verificar se a senha digitada está de acordo com as normas, para isso, usa-se uma array
+const requeriments= [
+    { regex: /.{8,}/, index: 0 }, // Mínimo de 8 caracteres
+    { regex: /[0-9]/, index: 1 }, // Saber se há números
+    { regex: /[a-z]/, index: 2 }, //letra minúscula
+    { regex: /[^A-Za-z0-9]/, index: 3 }, // símbolo especial
+    { regex: /[A-Z]/, index: 4 }, // letra Maiúscula
+]
+passwordInput.addEventListener("keyup", (e) => {
+    //checar se a senha atende aos requisitos
+    requeriments.forEach(item =>{
+        const isValidPassWord = item.regex.test(e.target.value);
+        const requerimentItem = requerimentList[item.index];
 
-form.addEventListener("submit", e => {
-    e.preventDefault();
-
-    checkInputs();
+        //efetuando alterações caso a senha seja verdadeira ou não 
+        if(isValidPassWord){
+            requerimentItem.classList.add("valid");
+            requerimentItem.firstElementChild.className = "fa-solid fa-check";
+        }else{
+            requerimentItem.classList.remove("valid");
+            requerimentItem.firstElementChild.className = "fa-solid fa-circle"
+        }
+    });
 });
-function checkInputs() {
-    const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
-    const password2Value = password2.value.trim();
-
-    if(emailValue === ""){
-        setErrorFor(email, "O E-mail não pode ficar vazio");
-    }else if(!isEmail(emailValue)){
-        setErrorFor(email, "Esse não é um email válido");
-    }else{
-        setSucessFor(email);
-    }
-
-    if(password === ""){
-        setErrorFor(password, "A senha não pode ficar vazia");
-    }else{
-        setSucessFor(password);
-    }
-    
-    if(password2 === ""){
-        setErrorFor(password2, "A confirmação de senha não pode ficar vazia");
-    }else{
-        setSucessFor(password2);
-    }
+//deixar visível os requerimentos da senha
+function requerimentsVisible(){
+    const requerimentsTopics = document.getElementById("requerimentsTopics")
+    requerimentsTopics.style.display = "flex";
 };
-function setErrorFor(input, message){
-    const formControl = input.parentElement;
-    const small = documen.querySelector("small");
-
-    formControl.className = `form-control error`;
-    small.innerText = message;
-
+function requerimentsInvisible(){
+    const requerimentsTopicsInvisible = document.getElementById("requerimentsTopics")
+    requerimentsTopicsInvisible.style.display = "none"
 }
-function setSucessFor(input){
-    const formControl = input.parentElement;
-    formControl.className = `form-control sucess`;
-}
-/* modo noturno na área para entrar*/
-var noturno = document.getElementById("noturno");
-var c = document.getElementById("body");
-var h = document.getElementById("header");
-
-function noite(){
-    body.style.background = "Black"
-    header.style.background = "Black"
-}
-function dia(){
-    body.style.background = "White"
-    header.style.background = "White"
-}
-noite();
-dia();

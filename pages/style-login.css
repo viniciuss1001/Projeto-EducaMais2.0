@@ -159,6 +159,10 @@ body{
     cursor: pointer;
     user-select: none;
 }
+#ButtonforCaptcha a{
+    text-decoration: none;
+    color: #fff;
+}
 #CaptchaButton:active{
     transform: scale(.99);
 }
@@ -184,6 +188,81 @@ body{
     width: fit-content;
     position: absolute;
     opacity: 0;
+}
+/*criação de senha verificação visual*/
+.wrapper{
+    background-color: none;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding: 0rem ;
+}
+.wrapper .passField{
+    background-color: none;
+    width: 100%;
+    height: 4rem;
+    position: relative;
+
+}
+.passField input{
+    width: 120%;
+    height: 45%;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    background-color: #e2f1ffae;
+}
+.passField input:focus{
+    background-color: #155bd583;
+
+}
+.passField i{
+    right: 5%;
+    top: 50%;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.wrapper .wrapperContent{
+    margin: 0rem 0 .5rem 0;
+    padding: 0 0 0 1rem;
+    display: none;
+    flex-direction: column;
+    transition: .5s ease;
+}
+
+.wrapperContent p{
+    color: var(--C1);
+    font-size: 1rem;
+}
+.wrapperContent .requerimentList{
+    margin-top: 1.2rem;
+}
+.wrapperContent .requerimentList li{
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.requerimentList li i{
+    width: 1.3rem;
+    color: #aaa;
+    font-size: 0.6rem;
+}
+.requerimentList li.valid i{
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+.requerimentList li span{
+    margin-left: 12px;
+    color: #333;
+}
+.requerimentList li.valid span{
+    color: #999;
 }
 /*área de login*/
 .email-container{
@@ -326,6 +405,7 @@ body{
     background-color: #e2f1ffae;
     transition: .5s ease;
 }
+
 .formCreate label .inputRegister + span{
     position: absolute;
     left: .6rem;

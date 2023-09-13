@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        
+        <title>Criar conta</title>
         <!--demais configurações do site-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,11 +38,40 @@
                 <span>Email</span>
             </label>
             <label for="">
-                <input type="password" required placeholder="" class="inputRegister">
-                <span>Senha</span>
+                <div class="wrapper">
+                    <div class="passField">
+                        <input type="password" required placeholder="" class="inputRegister" id="passwardVerifyCreate" onclick="requerimentsVisible()">
+                        <span>Senha</span>
+                    </div>
+                    <div class="wrapperContent" id="requerimentsTopics">
+                        <p>Sua senha precisa conter</p>
+                        <ul class="requerimentList" id="requerimentList">
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Mínimo de 8 caracteres</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Conter número(0...9)</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Letra minúscula(a...z)</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Conter um Símbolo (!...$)</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle"></i>
+                                <span>Letra Maiúscula(A...Z)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </label>
             <label for="">
-                <input type="password" required placeholder="" class="inputRegister">
+                <input type="password" required placeholder="" class="inputRegister" onclick="requerimentsInvisible()">
                 <span>Confirme a senha</span>
             </label>
                 <a href="#CaptchaSection" class="LinkSubmitButton">
@@ -74,7 +103,9 @@
                </div>
                <div class="msgCaptcha">Código de validação está correto</div>
                <div class="input-field button disabled" id="CaptchaButton">
-                <button id="ButtonforCaptcha">Enviar Captcha</button>
+                <button id="ButtonforCaptcha">
+                    <a href="dashboard/dash.html">Enviar Captcha</a>
+                </button>
                </div>
            </div>
        </div>
