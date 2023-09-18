@@ -49,6 +49,7 @@ function openNot(){
     var Notfy = document.getElementById("notify");
     Notfy.style.width = "30%";
     Notfy.style.opacity = "1";
+    return false
 }
 function closeNot(){
     var NotfyClose = document.getElementById("notify");

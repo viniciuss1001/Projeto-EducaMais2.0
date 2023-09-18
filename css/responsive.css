@@ -86,6 +86,9 @@
     html{
         scroll-padding: 0;
     }
+    body{
+        overflow-x: hidden;
+    }
     #bar{
         font-size: 1.7rem;
         cursor: pointer;
@@ -134,6 +137,7 @@
 
     }
     /*responsividade do menu*/
+    
     .inicio{
         height: auto;
         width: 100%;
@@ -197,7 +201,7 @@
     #homeImg{
         display: none;
     }
-}
+
     .habilidades .content{
         padding: 1rem 10px;
     }
@@ -320,6 +324,7 @@
         max-width: 80%;
         width: 100%;
         margin: 10% auto;
-        background-color: nonw;
+        background-color: none;
     }
 }
+};

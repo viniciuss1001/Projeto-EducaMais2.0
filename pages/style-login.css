@@ -231,7 +231,7 @@ body{
     padding: 0 0 0 1rem;
     display: none;
     flex-direction: column;
-    transition: .5s ease;
+    transition: .5s ease-in-out;
 }
 
 .wrapperContent p{
@@ -319,7 +319,7 @@ body{
     display: flex;
 }
 .formCreate{
-    margin: 10% auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: column;
     gap: .6rem;
