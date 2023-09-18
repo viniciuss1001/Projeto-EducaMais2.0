@@ -789,8 +789,9 @@ section{
     margin-left: 5rem;
 }
 .duvidas-laterais .topduv{
+    margin: 1rem 0;
     border: 2px solid #1f1f1f;
-    border-radius: 2px;
+    border-radius: 5rem;
     padding: 1rem;
     color: black;
     width: 100%;

@@ -228,15 +228,18 @@
     .praticas .content .detalhes{
         width: 95%;
         padding: 0;
-    }
+    }/*área das dúvidas */
     .duvidas{
         background-color: none;
-        display: flex;
-        justify-content: space-between;
+        display: inline-block;
+        align-items: center;
     }
     .duvidas-container{
-        background-color: #dcdcdc;
-        display: inline-block;
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
     }
     .form-duvidas{
         display: flex;
@@ -245,8 +248,9 @@
         width: 100%;
     }
     .duvidas-form{
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        width: 100%;
+        background-color: var(--primary-light);
     }
     .duvidas-laterais{
         margin: 0 auto;
